@@ -18,6 +18,7 @@ namespace HttpClientNa5
         static async Task Main(string[] args)
         {
             Console.WriteLine("1. Авторизация и получение новостей");
+
             Console.WriteLine("2. Добавить новую новость вручную");
             Console.Write("Выберите действие: ");
 
