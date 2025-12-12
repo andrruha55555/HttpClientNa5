@@ -60,7 +60,7 @@ namespace HttpClientNa5
 
         public static async Task<Cookie> SingInAsync(string login, string password)
         {
-            string url = "http://localhost:81/news/ajax/login.php";
+            string url = "http://10.111.20.114/ajax/login.php";
             Debug.WriteLine($"Выполняем запрос: {url}");
 
             try
@@ -102,7 +102,7 @@ namespace HttpClientNa5
 
         public static async Task<string> GetContentAsync(Cookie token)
         {
-            string url = "http://localhost:81/news/main.php";
+            string url = "http://10.111.20.114/main.php";
             Debug.WriteLine($"Выполняем запрос: {url}");
 
             try
@@ -228,7 +228,7 @@ namespace HttpClientNa5
         {
             try
             {
-                string url = "http://localhost:81/news/ajax/add.php";
+                string url = "http://10.111.20.114/ajax/add.php";
                 Debug.WriteLine($"Добавляем новость: {news.Name}");
                 var cookieContainer = new CookieContainer();
                 var handler = new HttpClientHandler
